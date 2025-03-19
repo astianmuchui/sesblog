@@ -4,3 +4,4 @@ db.sqlite3
 .mypy_cache/
 __pycache__/
 .vercel
+node_modules/
