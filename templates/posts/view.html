@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Detail</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    {% include "./partials/nav.html" %}
+
+    <div class="max-w-4xl mx-auto p-6">
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <h1 class="text-3xl font-bold mb-4">{{ post.title }}</h1>
+            <p class="text-sm text-gray-500 mb-2">
+                Created at {{ post.created_at }} By {{ post.author }}
+            </p>
+            <div class="text-gray-700 leading-relaxed">
+                {{ post.content }}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

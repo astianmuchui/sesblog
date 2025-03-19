@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ses Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="antialiased text-gray-800">
+
+    {% include "./posts/partials/nav.html" %}
+    <section class="text-center py-20 bg-white">
+        <h1 class="text-4xl font-bold mb-4">Welcome to The SES Blog</h1>
+        <p class="text-lg text-gray-600 mb-8">Discover amazing content and share your thoughts with the world.</p>
+        <div class="flex justify-center space-x-4">
+            <a href="{% url "create" %}" class="px-6 py-3 bg-blue-800 text-white rounded-lg font-semibold hover:bg-blue-600">Write</a>
+            <a href="{% url "all" %}" class="px-6 py-3 bg-fuchsia-300 text-fuchsia-800 rounded-lg font-semibold hover:bg-fuchsia-400">Read my posts</a>
+        </div>
+    </section>
+
+</body>
+</html>
